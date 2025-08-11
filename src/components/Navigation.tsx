@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import vendorBandhuIcon from "@/assets/vendorbandhu-icon.png";
+import ThemeToggle from "@/components/ThemeToggle";
+import vendorBandhuLogo from "@/assets/vendorbandhu-logo.png";
 
 const Navigation = () => {
   return (
@@ -9,8 +10,8 @@ const Navigation = () => {
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
             <img 
-              src={vendorBandhuIcon} 
-              alt="VendorBandhu" 
+              src={vendorBandhuLogo} 
+              alt="VendorBandhu Logo" 
               className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" 
             />
             <div className="absolute inset-0 bg-gradient-glow rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -45,6 +46,7 @@ const Navigation = () => {
         </div>
 
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           <Button 
             variant="outline" 
             className="border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300"

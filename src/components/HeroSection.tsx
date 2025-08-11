@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Users, Truck, ShoppingCart, Star, Sparkles, TrendingUp } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroBanner from "@/assets/hero-banner.jpg";
 import productsHero from "@/assets/products-hero.jpg";
 
 const HeroSection = () => {
@@ -99,8 +99,8 @@ const HeroSection = () => {
           <div className="relative animate-slide-in-right">
             <div className="relative group">
               <img 
-                src={productsHero} 
-                alt="VendorBandhu Platform - Fresh Ingredients" 
+                src={heroBanner} 
+                alt="VendorBandhu Platform - Fresh Ingredients and Vendor Cooperation" 
                 className="rounded-2xl shadow-xl w-full transform group-hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/20 rounded-2xl group-hover:opacity-75 transition-opacity duration-300"></div>
