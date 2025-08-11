@@ -106,17 +106,17 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/20 rounded-2xl group-hover:opacity-75 transition-opacity duration-300"></div>
               
               {/* Floating product cards */}
-              <div className="absolute -top-4 -left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-glow animate-float">
+              <div className="absolute -top-4 -left-4 bg-card border border-border/20 rounded-xl p-4 shadow-xl animate-float">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-accent rounded-full animate-glow-pulse"></div>
-                  <span className="text-sm font-medium">Fresh Daily</span>
+                  <span className="text-sm font-medium text-foreground">Fresh Daily</span>
                 </div>
               </div>
               
-              <div className="absolute -bottom-4 -right-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-glow animate-bounce-slow">
+              <div className="absolute -bottom-4 -right-4 bg-card border border-border/20 rounded-xl p-4 shadow-xl animate-bounce-slow">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-primary rounded-full animate-glow-pulse"></div>
-                  <span className="text-sm font-medium">30% Savings</span>
+                  <span className="text-sm font-medium text-foreground">30% Savings</span>
                 </div>
               </div>
             </div>
@@ -125,12 +125,20 @@ const HeroSection = () => {
 
         {/* Trusted by section */}
         <div className="mt-20 text-center animate-fade-in">
-          <p className="text-muted-foreground mb-6">Trusted by vendors across India</p>
-          <div className="flex justify-center items-center gap-8 opacity-60">
-            <div className="bg-gradient-card px-6 py-3 rounded-lg shadow-subtle">Mumbai</div>
-            <div className="bg-gradient-card px-6 py-3 rounded-lg shadow-subtle">Delhi</div>
-            <div className="bg-gradient-card px-6 py-3 rounded-lg shadow-subtle">Bangalore</div>
-            <div className="bg-gradient-card px-6 py-3 rounded-lg shadow-subtle">Chennai</div>
+          <p className="text-muted-foreground mb-8 text-lg">Trusted by vendors across India</p>
+          <div className="flex justify-center items-center gap-6 flex-wrap">
+            <div className="bg-card border border-border/30 px-8 py-4 rounded-2xl shadow-warm hover:shadow-glow transition-all duration-300 hover:scale-105">
+              <span className="text-foreground font-semibold">Mumbai</span>
+            </div>
+            <div className="bg-card border border-border/30 px-8 py-4 rounded-2xl shadow-warm hover:shadow-glow transition-all duration-300 hover:scale-105">
+              <span className="text-foreground font-semibold">Delhi</span>
+            </div>
+            <div className="bg-card border border-border/30 px-8 py-4 rounded-2xl shadow-warm hover:shadow-glow transition-all duration-300 hover:scale-105">
+              <span className="text-foreground font-semibold">Bangalore</span>
+            </div>
+            <div className="bg-card border border-border/30 px-8 py-4 rounded-2xl shadow-warm hover:shadow-glow transition-all duration-300 hover:scale-105">
+              <span className="text-foreground font-semibold">Chennai</span>
+            </div>
           </div>
         </div>
       </div>

@@ -193,20 +193,33 @@ const PortalCards = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16 animate-fade-in">
-          <p className="text-muted-foreground mb-4">
-            New to VendorBandhu? 
-            <span className="text-primary font-semibold"> Join thousands of successful vendors and suppliers!</span>
-          </p>
-          <div className="flex justify-center gap-4">
-            <div className="bg-gradient-card px-4 py-2 rounded-full shadow-subtle">
-              <span className="text-sm">✨ No setup fees</span>
-            </div>
-            <div className="bg-gradient-card px-4 py-2 rounded-full shadow-subtle">
-              <span className="text-sm">🚀 Instant approval</span>
-            </div>
-            <div className="bg-gradient-card px-4 py-2 rounded-full shadow-subtle">
-              <span className="text-sm">💰 Start saving today</span>
+        <div className="text-center mt-20 animate-fade-in">
+          <div className="bg-card border border-border/30 rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              Ready to Transform Your Business?
+            </h3>
+            <p className="text-muted-foreground mb-6 text-lg">
+              Join thousands of successful vendors and suppliers who are already saving money and growing their businesses
+            </p>
+            <div className="flex justify-center gap-6 flex-wrap">
+              <div className="bg-primary/10 border border-primary/20 px-6 py-3 rounded-2xl shadow-warm hover:shadow-glow transition-all duration-300 hover:scale-105">
+                <span className="text-primary font-semibold flex items-center gap-2">
+                  <Sparkles className="h-4 w-4" />
+                  No setup fees
+                </span>
+              </div>
+              <div className="bg-accent/10 border border-accent/20 px-6 py-3 rounded-2xl shadow-warm hover:shadow-glow transition-all duration-300 hover:scale-105">
+                <span className="text-accent font-semibold flex items-center gap-2">
+                  <Star className="h-4 w-4" />
+                  Instant approval
+                </span>
+              </div>
+              <div className="bg-primary/10 border border-primary/20 px-6 py-3 rounded-2xl shadow-warm hover:shadow-glow transition-all duration-300 hover:scale-105">
+                <span className="text-primary font-semibold flex items-center gap-2">
+                  <TrendingUp className="h-4 w-4" />
+                  Start saving today
+                </span>
+              </div>
             </div>
           </div>
         </div>
