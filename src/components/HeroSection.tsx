@@ -28,7 +28,7 @@ const HeroSection = () => {
                 <span className="bg-gradient-rainbow bg-clip-text text-transparent animate-fade-in">
                   सहयोग से सफलता
                 </span>
-                <span className="block text-primary animate-glow-pulse font-extrabold">
+                <span className="block text-primary font-extrabold">
                   VendorBandhu
                 </span>
               </h1>
@@ -43,7 +43,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
               <Button 
                 size="lg" 
-                className="bg-gradient-primary hover:shadow-glow hover:scale-105 transition-all duration-300 shadow-warm group" 
+                className="bg-gradient-to-r from-primary to-accent text-white hover:scale-105 transition-all duration-300 group border-0" 
                 asChild
               >
                 <Link to="/vendor-portal">
@@ -54,8 +54,8 @@ const HeroSection = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 group" 
+                variant="secondary" 
+                className="bg-white/10 text-white border-2 border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 group backdrop-blur-sm" 
                 asChild
               >
                 <Link to="/supplier-portal">
