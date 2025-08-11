@@ -54,8 +54,8 @@ const HeroSection = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="secondary" 
-                className="bg-white/10 text-white border-2 border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 group backdrop-blur-sm" 
+                variant="outline" 
+                className="border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-white hover:scale-105 transition-all duration-300 group" 
                 asChild
               >
                 <Link to="/supplier-portal">
