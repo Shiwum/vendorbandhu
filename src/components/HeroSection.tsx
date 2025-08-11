@@ -66,27 +66,27 @@ const HeroSection = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-4 pt-8">
-              <Card className="bg-gradient-card border-0 shadow-glow hover:shadow-xl hover:scale-105 transition-all duration-300 group animate-zoom-in">
+              <Card className="bg-card/90 backdrop-blur-sm border border-border/20 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group animate-zoom-in">
                 <CardContent className="p-4 text-center">
-                  <div className="text-3xl font-bold text-primary group-hover:animate-glow-pulse">2500+</div>
+                  <div className="text-3xl font-bold text-primary">2500+</div>
                   <div className="text-sm text-muted-foreground flex items-center justify-center gap-1">
                     <Users className="h-3 w-3" />
                     Active Vendors
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-gradient-card border-0 shadow-glow hover:shadow-xl hover:scale-105 transition-all duration-300 group animate-zoom-in" style={{animationDelay: '0.2s'}}>
+              <Card className="bg-card/90 backdrop-blur-sm border border-border/20 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group animate-zoom-in" style={{animationDelay: '0.2s'}}>
                 <CardContent className="p-4 text-center">
-                  <div className="text-3xl font-bold text-accent group-hover:animate-glow-pulse">500+</div>
+                  <div className="text-3xl font-bold text-accent">500+</div>
                   <div className="text-sm text-muted-foreground flex items-center justify-center gap-1">
                     <Star className="h-3 w-3" />
                     Verified Suppliers
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-gradient-card border-0 shadow-glow hover:shadow-xl hover:scale-105 transition-all duration-300 group animate-zoom-in" style={{animationDelay: '0.4s'}}>
+              <Card className="bg-card/90 backdrop-blur-sm border border-border/20 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group animate-zoom-in" style={{animationDelay: '0.4s'}}>
                 <CardContent className="p-4 text-center">
-                  <div className="text-3xl font-bold text-primary group-hover:animate-glow-pulse">₹2Cr+</div>
+                  <div className="text-3xl font-bold text-primary">₹2Cr+</div>
                   <div className="text-sm text-muted-foreground flex items-center justify-center gap-1">
                     <TrendingUp className="h-3 w-3" />
                     Savings Generated

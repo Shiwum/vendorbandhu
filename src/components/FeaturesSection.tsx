@@ -108,7 +108,7 @@ const FeaturesSection = () => {
             {productCategories.map((category, index) => (
               <Card 
                 key={index} 
-                className="group bg-gradient-card border-0 shadow-glow hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden animate-zoom-in"
+                className="group bg-card/90 backdrop-blur-sm border border-border/20 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden animate-zoom-in"
                 style={{animationDelay: `${index * 0.2}s`}}
               >
                 <div className="relative h-48 overflow-hidden">
@@ -135,7 +135,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="group bg-gradient-card border-0 shadow-glow hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden animate-scale-in"
+              className="group bg-card/90 backdrop-blur-sm border border-border/20 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden animate-scale-in"
               style={{animationDelay: `${index * 0.15}s`}}
             >
               <CardHeader className="relative">
@@ -166,19 +166,19 @@ const FeaturesSection = () => {
         <div className="mt-20 text-center">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="animate-fade-in">
-              <div className="text-4xl font-bold text-primary mb-2 animate-glow-pulse">24/7</div>
+              <div className="text-4xl font-bold text-primary mb-2">24/7</div>
               <div className="text-muted-foreground">Support Available</div>
             </div>
             <div className="animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <div className="text-4xl font-bold text-accent mb-2 animate-glow-pulse">99.9%</div>
+              <div className="text-4xl font-bold text-accent mb-2">99.9%</div>
               <div className="text-muted-foreground">Uptime Guarantee</div>
             </div>
             <div className="animate-fade-in" style={{animationDelay: '0.4s'}}>
-              <div className="text-4xl font-bold text-primary mb-2 animate-glow-pulse">50+</div>
+              <div className="text-4xl font-bold text-primary mb-2">50+</div>
               <div className="text-muted-foreground">Cities Covered</div>
             </div>
             <div className="animate-fade-in" style={{animationDelay: '0.6s'}}>
-              <div className="text-4xl font-bold text-accent mb-2 animate-glow-pulse">4.8★</div>
+              <div className="text-4xl font-bold text-accent mb-2">4.8★</div>
               <div className="text-muted-foreground">User Rating</div>
             </div>
           </div>
