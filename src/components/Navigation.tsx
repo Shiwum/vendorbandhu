@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import vendorBandhuLogo from "@/assets/vendorbandhu-logo.png";
 
 const Navigation = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50 shadow-subtle">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -21,6 +25,7 @@ const Navigation = () => {
           </span>
         </Link>
         
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           <Link 
             to="/about" 
@@ -45,7 +50,8 @@ const Navigation = () => {
           </Link>
         </div>
 
-        <div className="flex items-center gap-3">
+        {/* Desktop Action Buttons */}
+        <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Button 
             variant="outline" 
@@ -61,7 +67,68 @@ const Navigation = () => {
             <Link to="/supplier-login">Supplier Login</Link>
           </Button>
         </div>
+
+        {/* Mobile Menu Button */}
+        <div className="flex md:hidden items-center gap-2">
+          <ThemeToggle />
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="p-2"
+          >
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border/50">
+          <div className="container mx-auto px-4 py-4 space-y-3">
+            <Link 
+              to="/about" 
+              className="block text-muted-foreground hover:text-primary transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link 
+              to="/features" 
+              className="block text-muted-foreground hover:text-primary transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Features
+            </Link>
+            <Link 
+              to="/contact" 
+              className="block text-muted-foreground hover:text-primary transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
+            <div className="pt-3 space-y-2">
+              <Button 
+                variant="outline" 
+                className="w-full border-primary text-primary bg-background hover:bg-primary hover:text-primary-foreground"
+                asChild
+              >
+                <Link to="/vendor-login" onClick={() => setIsMobileMenuOpen(false)}>
+                  Vendor Login
+                </Link>
+              </Button>
+              <Button 
+                className="w-full bg-gradient-primary"
+                asChild
+              >
+                <Link to="/supplier-login" onClick={() => setIsMobileMenuOpen(false)}>
+                  Supplier Login
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
