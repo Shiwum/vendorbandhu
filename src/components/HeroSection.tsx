@@ -55,7 +55,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-white hover:scale-105 transition-all duration-300 group" 
+                className="border-2 border-accent bg-background text-accent hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 group" 
                 asChild
               >
                 <Link to="/supplier-portal">

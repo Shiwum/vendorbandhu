@@ -49,7 +49,7 @@ const Navigation = () => {
           <ThemeToggle />
           <Button 
             variant="outline" 
-            className="border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300"
+            className="border-primary text-primary bg-background hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300"
             asChild
           >
             <Link to="/vendor-login">Vendor Login</Link>
